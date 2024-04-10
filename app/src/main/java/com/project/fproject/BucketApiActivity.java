@@ -41,13 +41,12 @@ public class BucketApiActivity extends AppCompatActivity implements ApiTask.ApiC
 
     @Override
     public void onSuccess(String result) {
-        // Handle successful response
         apiResponseTextView.setText(result); // Set the API response text to the TextView
     }
 
     @Override
     public void onError(String error) {
-        // Handle error
+
         apiResponseTextView.setText("Error: " + error); // Display error message in TextView
     }
 }

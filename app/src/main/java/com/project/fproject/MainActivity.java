@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    // Social media links
     public void openLinkedInProfile(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/jobrn-ochoa-nm/"));
         startActivity(intent);

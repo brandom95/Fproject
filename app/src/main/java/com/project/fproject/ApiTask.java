@@ -15,7 +15,7 @@ import java.net.URL;
 public class ApiTask extends AsyncTask<Void, Void, String> {
 
     private static final String TAG = ApiTask.class.getSimpleName();
-    private static final String API_KEY = "fIlQMPt0IfPRMVgZYXsMJQ==2kewCXR3wPMcBRbp";
+    private static final String API_KEY = "fIlQMPt0IfPRMVgZYXsMJQ==2kewCXR3wPMcBRbp"; // Private API key
 
     private ApiCallback callback;
 
@@ -26,7 +26,7 @@ public class ApiTask extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         try {
-            URL url = new URL("https://api.api-ninjas.com/v1/bucketlist");
+            URL url = new URL("https://api.api-ninjas.com/v1/bucketlist"); // URL for the API call
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("accept", "application/json");
             connection.setRequestProperty("X-Api-Key", API_KEY); // Include API key in X-Api-Key header
